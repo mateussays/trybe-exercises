@@ -1,0 +1,144 @@
+body, h1, h2, ul, li, p, dd, dt, dl { 
+  margin: 0px;
+  padding: 0px;
+}
+
+img { 
+  display: block;
+  max-width: 100%; 
+  width: 800px;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: #f0eadb;
+  color: #222;
+}
+
+.header {
+  position: relative;
+  padding: 32px 32px;
+  margin-bottom: 32px;
+  background: #c62828;
+}
+
+.header h1 {
+  color: #fff;
+  font-family: 'Playfair Display SC', serif;
+  font-size: 2rem; 
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+.navigation li {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: .1em;
+}
+
+.aside {
+  position: relative;
+  float: right;
+  padding-right: 32px;
+}
+
+.aside h3 {
+  margin: 0 32px 0 0;
+  font-size: 26px;
+}
+
+.aside li a {
+    display: block;
+    padding: 18px;
+    margin: 0 auto;
+    text-decoration: none;
+    color: #c62828;
+    font-family: monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: .1em;
+}
+
+.aside li a:hover {
+  color: #222;
+}
+
+
+article {
+  margin: 32px 32px;
+}
+
+.subtitle {
+  color: #c62828;
+  font-family: 'Playfair Display SC', serif;
+  font-size: 3rem; 
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+.subtitle_2 {
+  color: #c62828;
+  font-family: 'Playfair Display SC', serif;
+  font-size: 2rem; 
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 32px;
+}
+
+section {
+  max-width: 800px;
+  margin-bottom: 32px;
+}
+
+section p {
+  padding-bottom: 32px;
+  font-family: monospace;
+  line-height: 1.5;
+}
+
+table {
+  margin-top: 32px;
+}
+
+
+th {
+  padding-right: 58px;
+  font-family: monospace;
+  margin-right: 12px;
+}
+
+.bottom th {
+  font-weight: normal;
+}
+
+.bibliography li a {
+  text-decoration: none;
+  list-style: square;
+  font-family: monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: .1em;
+}
+
+.footer {
+  background: #c62828;
+  color: #fff;
+  font-weight: bold;
+  padding: 32px;
+}
