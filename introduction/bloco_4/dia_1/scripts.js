@@ -20,3 +20,18 @@ if (numberOne > numberTwo) {
 else {
   console.log('É menor');
 }
+
+//Resolvendo exercicio 3
+
+let numberThree = 100;
+
+if (numberOne > numberTwo && numberOne > numberThree) {
+  console.log('NumberOne é Maior');
+}
+else if (numberTwo > numberOne && numberTwo > numberThree) {
+  console.log('NumberTwo é Maior');
+}
+else {
+  console.log('NumberThree é maior');
+}
+
