@@ -35,3 +35,19 @@ else {
   console.log('NumberThree é maior');
 }
 
+//Resolvendo exercicio 4
+
+let tenhoDinheiro;
+
+switch (tenhoDinheiro) {
+  case true:
+    console.log('positive');
+    break;
+  case false:
+    console.log('negative');
+    break;
+  default:
+    console.log('zero');
+}
+
+//Resolvendo exercicio 5
