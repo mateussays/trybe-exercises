@@ -1,8 +1,8 @@
 //Resolvendo exercicio 11
 
 function calcSalarioLiquido(salarioBruto) {
-  let salarioLiquido = null;
-  let salarioBase = null;
+  let salarioLiquido;
+  let salarioBase;
 
   let inss8 = salarioBruto * 0.08;
   let inss9 = salarioBruto * 0.09;
