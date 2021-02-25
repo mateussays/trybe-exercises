@@ -53,3 +53,21 @@ function isOdd(num1, num2, num3) {
 console.log(isOdd(23, 12, 11));
 
 //Resolvendo exercicio 10
+
+function calcularLucro(valorCusto, valorVenda) {
+  let custoTotal = valorCusto * 1000;
+  let impostoTotal = custoTotal * 0.2;
+  let vendaTotal = valorVenda * 1000;
+  let lucro = vendaTotal - custoTotal - impostoTotal;
+
+  if (valorCusto < 0 || valorVenda < 0) {
+    return 'O valor não pode ser menor que zero';
+  }
+  else {
+    return 'O lucro da venda de 1000 itens é ', lucro;
+  }
+}
+
+console.log(calcularLucro(100, 300));
+
+
