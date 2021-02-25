@@ -38,3 +38,18 @@ function isEven(num1, num2, num3) {
 }
 
 console.log(isEven(30, 50, 23));
+
+//Resolvendo exercicio 9
+
+function isOdd(num1, num2, num3) {
+  if (num1 % 2 != 0 || num2 % 2 != 0 || num3 % 2 != 0) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+console.log(isOdd(23, 12, 11));
+
+//Resolvendo exercicio 10
