@@ -11,10 +11,10 @@
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
 
-function changeText(text) {
+function changeTextByTag(text) {
   document.getElementsByTagName('p')[0].innerText = text;
 }
-changeText('lorem ipsum bla bla bla');
+changeTextByTag('lorem ipsum bla bla bla');
 
 function changeColorByClass(className, color) {
   document.getElementsByClassName(className)[0].style.background = color;
@@ -22,3 +22,26 @@ function changeColorByClass(className, color) {
 
 changeColorByClass('main-content', 'rgb(76,164,109)');
 
+changeColorByClass('center-content', 'white');
+
+function changeTitleByClass(className, text) {
+  document.getElementsByClassName(className)[0].innerHTML = text;
+}
+
+changeTitleByClass('title', 'Exercicio 5.1 - Javascript');
+
+function paragraphUpperCase() {
+  let paragraph = document.getElementsByTagName('p')[0];
+  paragraph.innerHTML = paragraph.innerHTML.toUpperCase();
+}
+
+paragraphUpperCase();
+
+function showParagraph() {
+ let paragraph = document.getElementsByTagName('p');
+ for (let index = 0; index < paragraph.length; index += 1) {
+  console.log(paragraph[index].innerHTML);
+ }
+}
+
+showParagraph();
