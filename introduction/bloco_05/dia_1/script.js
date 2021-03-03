@@ -14,5 +14,11 @@
 function changeText(text) {
   document.getElementsByTagName('p')[0].innerText = text;
 }
-
 changeText('lorem ipsum bla bla bla');
+
+function changeColorByClass(className, color) {
+  document.getElementsByClassName(className)[0].style.background = color;
+}
+
+changeColorByClass('main-content', 'rgb(76,164,109)');
+
