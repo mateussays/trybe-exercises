@@ -60,3 +60,34 @@ for (let index = 1; index <= 3; index += 1) {
   h3Create.innerHTML = 'Show ' + index;
   newDiv.appendChild(h3Create);
 }
+
+
+//Exercise 1 part II
+
+newTitle.className = 'title';
+
+//Exercise 2 parte II
+
+const elementsH3 = document.getElementsByTagName('h3');
+      for (let index = 0; index < 3; index += 1) {
+        elementsH3[index].className = 'description';
+}
+
+//Exercise 3 part II
+
+const divLeftContent = document.getElementsByClassName('left-content')[0];
+     newDiv.removeChild(divLeftContent);
+
+//Exercise 4 part II
+
+const divRightContent = document.getElementsByClassName('right-content')[0];
+      divRightContent.style.marginRight='auto';
+// Exercise 5 part II
+
+const divCenterContent = document.getElementsByClassName('center-content')[0];
+    divCenterContent.parentNode.style.backgroundColor = 'green';
+
+// Exercise 6 part II
+
+createUl.lastChild.remove();
+createUl.lastChild.remove();
