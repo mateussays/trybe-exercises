@@ -55,3 +55,18 @@ function createBtnHolidays(btnName) {
 };
 
 createBtnHolidays('Feriados');
+
+const btnHoliday = document.getElementById('btn-holiday');
+
+btnHoliday.addEventListener('click', function() {
+  const holidays = document.querySelectorAll('.holiday');
+
+  for (index = 0; index < holidays.length; index += 1) {
+    if (holidays[index].style.backgroundColor === 'white') {
+      holidays[index].style.backgroundColor = 'rgb(238,238,238)';
+    } else {
+      holidays[index].style.backgroundColor = 'white';
+    }
+  }
+});
+
