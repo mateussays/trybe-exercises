@@ -91,3 +91,23 @@ function createFriday(friday) {
 createFriday('Sexta-Feira');
 
 //Exercicio 5
+
+function createTextFriday(fridayArray) {
+const btnFriday = document.querySelector('#btn-friday');
+const friday = document.getElementsByClassName('friday');
+const fridayText = 'Sexta-feira!';
+
+btnFriday.addEventListener('click', function() {
+
+  for (let index = 0; index < friday.length; index += 1) {
+    if(friday[index].innerHTML !== fridayText) {
+      friday[index].innerHTML = fridayText;
+    } else {
+      friday[index].innerHTML = fridayArray[index];
+    }
+  }
+});
+};
+
+let fridayDez = [ 4, 11, 18, 25 ];
+createTextFriday(fridayDez);
