@@ -11,6 +11,8 @@ function createDaysOfTheWeek() {
   };
 };
 
+//Exercicio 1
+
 createDaysOfTheWeek();
 
 const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
@@ -44,6 +46,8 @@ function createDays() {
 
 createDays();
 
+//Exercicio 2
+
 function createBtnHolidays(btnName) {
   let btnContainer = document.querySelector('.buttons-container');
   let createBtn = document.createElement('button');
@@ -55,6 +59,8 @@ function createBtnHolidays(btnName) {
 };
 
 createBtnHolidays('Feriados');
+
+//Exercicio 3
 
 const btnHoliday = document.getElementById('btn-holiday');
 
@@ -70,3 +76,18 @@ btnHoliday.addEventListener('click', function() {
   }
 });
 
+//Exercicio 4
+
+function createFriday(friday) {
+  const fridayContainer = document.querySelector('.buttons-container');
+  const createFridayButton = document.createElement('button');
+  const createFridayId = 'btn-friday';
+
+  createFridayButton.innerHTML = friday;
+  createFridayButton.id = createFridayId;
+  fridayContainer.appendChild(createFridayButton);
+}
+
+createFriday('Sexta-Feira');
+
+//Exercicio 5
