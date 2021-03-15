@@ -1,30 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cadastro de Curriculo</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <form action="GET">
-    <fieldset>
-      <legend>Dados Pessoais</legend>
-      <label for="user-name">Nome:</label>
-      <input type="text" name="name" id="user-name" maxlength="40" required>
-      <br><br>
-      <label for="user-email">E-mail:</label>
-      <input type="text" name="email" id="user-email" maxlength="50" required>
-      <br><br>
-      <label for="user-cpf">CPF:</label>
-      <input type="text" name="cpf" id="user-cpf" maxlength="11" required>
-      <br><br>
-      <label for="user-address">Endereço:</label>
-      <input type="text" name="endereco" id="user-address" maxlength="200" required>
-      <label for="user-city">Cidade:</label>
-      <input type="text" name="cidade" id="user-city" maxlength="28" required>
-    </fieldset>
-  </form>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Curriculo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="GET">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+
+        <label for="user-name"
+          >Nome:
+          <input
+            type="text"
+            name="name"
+            id="user-name"
+            maxlength="40"
+            required
+          />
+        </label>
+
+        <br /><br />
+
+        <label for="user-email"
+          >E-mail:
+          <input
+            type="text"
+            name="email"
+            id="user-email"
+            maxlength="50"
+            required
+          />
+        </label>
+
+        <br /><br />
+        <label for="user-cpf"
+          >CPF:
+          <input type="text" name="cpf" id="user-cpf" maxlength="11" required />
+        </label>
+
+        <br /><br />
+
+        <label for="user-address"
+          >Endereço:
+          <input
+            type="text"
+            name="endereco"
+            id="user-address"
+            maxlength="200"
+            required
+          />
+        </label>
+
+        <label for="user-city"
+          >Cidade:
+          <input
+            type="text"
+            name="cidade"
+            id="user-city"
+            maxlength="28"
+            required
+          />
+        </label>
+
+        <label for="user-state">Estado:
+          <select name="estado" id="user-state" aria-valuemax="">
+          </select>
+        </label>
+      </fieldset>
+    </form>
+    <script src="script.js"></script>
+  </body>
 </html>
