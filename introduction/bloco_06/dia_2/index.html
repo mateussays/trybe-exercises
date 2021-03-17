@@ -8,7 +8,6 @@
   <title>Cadastro de Curriculo</title>
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="DatePickerX/dist/css/DatePickerX.min.css">
-  <script src="DatePickerX/dist/js/DatePickerX.min.js"></script>
 </head>
 
 <body>
@@ -17,23 +16,23 @@
     <p class="text-muted">Preencha os campos abaixo.</p>
   </header>
 
-  <form class="container">
+  <form method="GET" action="" class="container js-form">
 
     <div class="mb-3">
       <label for="user-name" class="form-label">Nome:</label>
-      <input type="text" name="name" id="user-name" class="form-control" maxlength="40" required
+      <input type="text" name="name" data-validate-field="name" id="user-name" class="form-control" maxlength="40" required
         placeholder="Nome Completo" />
     </div>
 
     <div class="mb-3 row">
       <div class="col">
         <label for="user-email" class="form-label">E-mail: </label>
-        <input type="text" name="email" class="email-input form-control" id="email" maxlength="50" required
+        <input type="text" name="email" data-validate-field="email" class="email-input form-control" id="email" maxlength="50" required
           placeholder="nome@exemplo.com" />
       </div>
       <div class="col">
         <label for="user-cpf" class="form-label">CPF:</label>
-        <input type="text" name="cpf" id="user-cpf" class="form-control" maxlength="11" required
+        <input type="text" name="cpf" data-validate-field="cpf" id="user-cpf" class="form-control" maxlength="11" required
           placeholder="xxx.xxx.xxx-xx" />
       </div>
     </div>
@@ -41,27 +40,27 @@
     <div class="mb-3 row">
       <div class="col">
         <label for="user-address" class="form-label">Endereço:</label>
-        <input type="text" name="endereco" id="user-address" class="form-control" maxlength="200" required />
+        <input type="text" name="endereco" data-validate-field="address" id="user-address" class="form-control" maxlength="200" required />
       </div>
 
       <div class="col">
         <label for="user-city" class="form-label">Cidade:</label>
-        <input type="text" name="cidade" id="user-city" class="form-control" maxlength="28" required />
+        <input type="text" name="cidade"  data-validate-field="city" id="user-city" class="form-control" maxlength="28" required />
       </div>
 
       <div class="col">
         <label for="user-state" class="form-label">Estado: </label>
-        <select name="estado" id="user-state" class="form-select"></select>
+        <select name="estado" data-validate-field="state" id="user-state" class="form-select"></select>
       </div>
     </div>
 
     <div class="form-check form-check-inline mb-3">
-      <input type="radio" id="house" class="form-check-input" name="user-place" value="casa" required />
+      <input type="radio" id="house" class="form-check-input" name="user-place"  data-validate-field="radio" value="casa" required />
       <label for="house" class="form-check-label">Casa</label>
     </div>
 
     <div class="form-check form-check-inline mb-3">
-      <input type="radio" id="ap" class="form-check-input" name="user-place" value="ap" required />
+      <input type="radio" id="ap" class="form-check-input" name="user-place"   data-validate-field="radio" value="ap" required />
       <label for="ap" class="form-check-label">Apartamento</label>
     </div>
 
@@ -71,18 +70,18 @@
 
       <div class="mb-3">
         <label for="resume" class="form-label">Última experiência:</label>
-        <textarea name="resumo" id="resume" class="form-control" cols="50" rows="10" maxlength="100"></textarea>
+        <textarea name="resumo" id="resume" data-validate-field="text" class="form-control" cols="50" rows="10" maxlength="100"></textarea>
       </div>
 
       <div class="mb-3 row">
         <div class="mb-3 col">
           <label for="last-job" class="form-label">Cargo:</label>
-          <input type="text" id="last-job" class="form-control" maxlength="40" required />
+          <input type="text" id="last-job" data-validate-field="text" class="form-control" maxlength="40" required />
         </div>
 
         <div class="mb-3 col">
           <label for="datepicker" class="form-label">Data de inicio:</label>
-          <input type="text" id="datepicker" class="input-data form-control" name="start-date" value="" required
+          <input type="text" id="datepicker" class="input-data form-control" name="start-date" data-validate-field="date" value="" required
             placeholder="xx/xx/xxxx" />
         </div>
       </div>
@@ -90,19 +89,20 @@
 
       <div class="mb-3">
         <label for="last-job-description" class="form-label"> Descrição do último cargo: </label>
-        <textarea name="job-description" id="last-job-description" class="form-control" cols="50" rows="10"
+        <textarea name="job-description" data-validate-field="position" id="last-job-description" class="form-control" cols="50" rows="10"
           required></textarea>
       </div>
 
     </fieldset>
 
     <div class="mb-3">
-      <button class="submit-button btn btn-primary" type="button">Enviar</button>
+      <button type="submit" class="submit-button btn btn-primary" type="button">Enviar</button>
       <button class="clear-button btn btn-success" type="button">Limpar</button>
     </div>
 
   </form>
-
+  <script src="DatePickerX/dist/js/DatePickerX.min.js"></script>
+  <script src="node_modules/just-validate/dist/js/just-validate.min.js"></script>
   <script src="script.js"></script>
 </body>
 
