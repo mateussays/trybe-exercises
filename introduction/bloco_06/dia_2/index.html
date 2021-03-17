@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cadastro de Curriculo</title>
   <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="DatePickerX/dist/css/DatePickerX.min.css">
+  <script src="DatePickerX/dist/js/DatePickerX.min.js"></script>
 </head>
 
 <body>
@@ -79,23 +81,25 @@
         </div>
 
         <div class="mb-3 col">
-          <label for="start-date" class="form-label">Data de inicio:</label>
-          <input type="text" class="input-data form-control" name="start-date" value="" required placeholder="xx/xx/xxxx" />
+          <label for="datepicker" class="form-label">Data de inicio:</label>
+          <input type="text" id="datepicker" class="input-data form-control" name="start-date" value="" required
+            placeholder="xx/xx/xxxx" />
         </div>
       </div>
 
 
       <div class="mb-3">
         <label for="last-job-description" class="form-label"> Descrição do último cargo: </label>
-        <textarea name="job-description" id="last-job-description" class="form-control" cols="50" rows="10" required></textarea>
+        <textarea name="job-description" id="last-job-description" class="form-control" cols="50" rows="10"
+          required></textarea>
       </div>
 
     </fieldset>
 
     <div class="mb-3">
-    <button class="submit-button btn btn-primary" type="button">Enviar</button>
-    <button class="clear-button btn btn-success" type="button">Limpar</button>
-  </div>
+      <button class="submit-button btn btn-primary" type="button">Enviar</button>
+      <button class="clear-button btn btn-success" type="button">Limpar</button>
+    </div>
 
   </form>
 
