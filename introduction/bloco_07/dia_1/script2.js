@@ -22,3 +22,8 @@ const longestWord = phrase => {
 }
 
 console.log(longestWord('Antonio foi no banheiro e não sabemos o que aconteceu'));
+
+let count = 0;
+const input = document.querySelector('#input');
+const button = document.querySelector('#button');
+button.addEventListener('click', ()=> input.value = count += 1);
