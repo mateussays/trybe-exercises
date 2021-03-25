@@ -26,3 +26,5 @@ addTurno(lesson2, 'turno', 'manhã');
 const listKeys = (lesson) =>  Object.keys(lesson);
 
 const sizeObject = (obj) => Object.keys(obj).length;
+
+const listObject = (obj) => Object.values(obj);
