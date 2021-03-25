@@ -23,3 +23,6 @@ const addTurno = (lesson, objectKey, value) => {
 }
 
 addTurno(lesson2, 'turno', 'manhã');
+
+const listKeys = (lesson) =>  Object.keys(lesson);
+console.log(listKeys(lesson1));
