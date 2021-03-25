@@ -21,8 +21,8 @@ const lesson3 = {
 const addTurno = (lesson, objectKey, value) => {
   lesson[objectKey] = value;
 }
-
 addTurno(lesson2, 'turno', 'manhã');
 
 const listKeys = (lesson) =>  Object.keys(lesson);
-console.log(listKeys(lesson1));
+
+const sizeObject = (obj) => Object.keys(obj).length;
