@@ -1,0 +1,7 @@
+.pokemon {
+  display: flex;
+  width: 250px;
+  margin-top: 10px;
+  background-color: burlywood;
+  align-content: center;
+}
