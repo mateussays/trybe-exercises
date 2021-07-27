@@ -132,27 +132,27 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 - [x] 18-1: _Context API do React_
 - [x] 18-2: _React Hooks - useState e useContext_
-- [ ] 18-3: _React Hooks - useEffect e Hooks customizados_
-- [ ] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks]()_
+- [x] 18-3: _React Hooks - useEffect e Hooks customizados_
+- [x] 18-4: _[Projeto - StarWars Datatable com Context API e Hooks](https://github.com/tryber/sd-010-a-project-starwars-planets-search/tree/mateussays-project-starwars)_
 
 ##### Bloco 19: Projeto Final de Front-end
 
-- [ ] 19-1: _[Projeto - App de Receitas]()_
+- [x] 19-1: _[Projeto - App de Receitas](https://github.com/tryber/sd-010-a-project-recipes-app/tree/main-group-18)_
 
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 
 ##### Bloco 20: Introdução - Bancos de dados relacionais
 
-- [ ] 20-1: _Banco de dados SQL_
-- [ ] 20-2: _Encontrando dados em um banco de dados_
-- [ ] 20-3: _Filtrando dados de forma especÍfica_
-- [ ] 20-4: _Manipulando tabelas_
-- [ ] 20-5: _[Projeto - All For One]()_
+- [x] 20-1: _Banco de dados SQL_
+- [x] 20-2: _Encontrando dados em um banco de dados_
+- [x] 20-3: _Filtrando dados de forma especÍfica_
+- [x] 20-4: _Manipulando tabelas_
+- [x] 20-5: _[Projeto - All For One](https://github.com/tryber/sd-010-a-mysql-all-for-one/tree/mateussays-mysql-all-for-one)_
 
 ##### Bloco 21: Bancos de dados relacionais
 
-- [ ] 21-1: _Funções mais usadas no SQL_
-- [ ] 21-2: _Descomplicando JOINs e UNIONs_
+- [x] 21-1: _Funções mais usadas no SQL_
+- [x] 21-2: _Descomplicando JOINs e UNIONs_
 - [ ] 21-3: _Stored Routines & Subqueries_
 - [ ] 21-4: _[Projeto - Vocabulary Booster]()_
 
